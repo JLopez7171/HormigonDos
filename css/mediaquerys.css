@@ -3,6 +3,9 @@
     .servicio{
         max-width: 400px;
     }
+      .item {
+    flex: 0 0 33.33%;
+  }
 }
 
 @media (max-width: 768px){
@@ -36,6 +39,10 @@
   .servicios-header h2 {
     font-size: 2rem;
   }
+
+  .carrusel {
+  width: 540px;
+}
 }
 
 @media (max-width: 426px) {
@@ -150,7 +157,7 @@
     height: 700px;
  }
  .productos {
-    height: 1000px;
+    height: 1200px;
 }
 .servicios{
     height: 1200px;
@@ -168,16 +175,33 @@
     width: 194px;
     transition: transform 0.3s ease;
 }
+  .carrusel {
+  width: 270px;
+}
+  .item {
+    flex: 0 0 100%; /* 1 ítem visible */
+  }
+
+  .carrusel-items {
+    gap: 12px; /* un gap un poco más pequeño si deseas */
+  }
+
+  .btn-prev,
+  .btn-next {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+
 }
 
-@media (max-width: 768px) {
-
-}
 @media (max-width: 600px) {
     .productos-lista {
         flex-direction: column;
         align-items: center;
     }
+      .item {
+    flex: 0 0 50%;
+  }
 }
 @media (max-width: 320px) {
     .productos{

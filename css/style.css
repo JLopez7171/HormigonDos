@@ -131,6 +131,10 @@ body{
     outline: 2px solid #ffffff;
     outline-offset: 4px;
 }
+.bot-productos button a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
 
 
 .servicios {
@@ -218,7 +222,66 @@ body{
   font-size: 0.95rem;
   width: 50%;
 }
-
+.catalogo {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.categoria {
+  margin-bottom: 3rem;
+  height: 200px;
+}
+.categoria h3 {
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+.carrusel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 120px;
+}
+.carrusel-items {
+  display: flex;
+  width: 700px;
+  scroll-behavior: smooth;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 25px 0 25px 0;
+}
+.item {
+  min-width: 200px;
+  margin: 0 10px;
+  background: #eee;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  flex: 0 0 auto;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.item:hover{
+  transform: translateY(-5px);
+}
+.btn-prev, .btn-next {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.btn-prev:hover, .btn-next:hover {
+  background: #555;
+}
+.carrusel-items::-webkit-scrollbar {
+  display: none;
+}
 
 
 

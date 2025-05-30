@@ -36,3 +36,18 @@ window.addEventListener('scroll', () => {
     sidebar.style.top = '60px';
   }
 });
+
+function moverCarrusel(id, direccion) {
+  const carrusel = document.getElementById(`carrusel-${id}`);
+  const carruselItems = carrusel.querySelector('.carrusel-items');
+  const item = carruselItems.querySelector('.item');
+
+  if (!item || !carruselItems) return;
+
+  const desplazamiento = item.offsetWidth + 16; // 16 es el "gap"
+
+  carruselItems.scrollBy({
+    left: direccion * desplazamiento,
+    behavior: 'smooth'
+  });
+}
