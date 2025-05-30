@@ -1,0 +1,57 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 103px);
+    background-image: url(../img/hero-fondo2.jpg);
+    mask-image: linear-gradient(black 98%, transparent);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero h2 {
+    color: white;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-benefits {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-benefits div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(45, 39, 39, 0.64);
+    border-radius: 12px;
+    padding: 1rem;
+    color: white;
+    backdrop-filter: blur(4px);
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.hero-benefits div:hover {
+    transform: scale(1.05);
+}
+
+.hero-benefits i {
+    font-size: 2rem;
+}

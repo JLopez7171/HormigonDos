@@ -1,0 +1,118 @@
+
+header{
+    position: relative;
+    height: auto;
+    width: 100%;
+
+}
+header div{
+
+    display: flex;
+    flex-direction: row-reverse;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    
+}
+
+header div div{
+    margin: 10px 25px 0 0;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+.header-animado{
+    background-color: #205781;
+}
+.header-animado > .header-item-1 {
+    animation-delay: 0.3s;
+}
+
+.header-animado > .header-item-2 {
+    animation-delay: 0.5s;
+}
+
+.header-animado > .header-item-3 {
+    animation-delay: 0.7s;
+}
+header div p{
+    color: #F6F8D5;
+}
+header div img{
+    margin: 0 15px 0 15px;
+    width: auto;
+    height: 18px;
+}
+
+.nav{
+    align-items: baseline;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-top: 1px solid #F6F8D5;
+    background: linear-gradient(#205781, #0d2130df );
+}
+.nav-link{
+    animation: fadeInUp 0.8s ease forwards;
+    text-decoration: none;
+    color: #F6F8D5;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.nav-link:hover{
+    color: goldenrod;
+}
+.nav-home{
+    font-size: 24px;
+}
+
+.menu-icon {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* se mostrará con media query */
+    z-index: 1001;  /* encima del resto del header */
+}
+
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(#205781, #0d2130 );
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    padding: 1rem;
+    z-index: 999;
+  }
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.sidebar ul li a {
+  color: #f6f8d5;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(246, 248, 213, 0.15);
+  transform: translateX(5px);
+  color: goldenrod;
+}
